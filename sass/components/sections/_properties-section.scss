@@ -1,0 +1,43 @@
+.properties-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.properties {
+  display: flex;
+}
+
+.propeties__item {
+  width: 270px;
+
+  &:not(:last-child) {
+      margin-right: 30px;
+    }
+}
+
+.properties__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.properties__icon-container {
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+}
+
+.properties__title {
+  margin-bottom: 10px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.properties__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--second-color);
+}
