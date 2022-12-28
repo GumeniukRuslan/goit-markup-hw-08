@@ -3,13 +3,26 @@
   padding-bottom: 60px;
 }
 
-
+@media screen and (min-width: 768px) {
+  .properties{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
 .propeties__item {
   width: 100%;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+  }
+  
+ @media screen and (min-width: 768px){
+  width: calc((100% - 30px) / 2);
 
-  &:not(:last-child) {
-      margin-bottom: 30px;
-    }
+ } 
 }
 
 .properties__icon {
