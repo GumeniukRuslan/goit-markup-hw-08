@@ -5,12 +5,17 @@
 
 .filters {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   margin-bottom: 50px;
+  max-width: 342px;
 }
 
 .filters__item:not(:last-child) {
   margin-right: 8px;
+}
+.filters__item:not(:nth-last-child(-n+2)) {
+  margin-bottom: 15px;
 }
 
 .filters__btn {
@@ -38,14 +43,8 @@
 }
 
 
-
-.examples {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .examples__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -54,11 +53,7 @@
   }
 }
 
-.examples__item:not(:nth-child(3n)) {
-  margin-right: 30px;
-}
-
-.examples__item:not(:nth-last-child(-n + 3)) {
+.examples__item:not(:last-child) {
   margin-bottom: 30px;
 }
 

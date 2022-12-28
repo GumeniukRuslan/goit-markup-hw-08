@@ -1,17 +1,14 @@
 .team-section {
   background-color: #F5F4FA;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
 }
 
 .team-section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
-.team {
-  display: flex;
-}
 
 .team__member {
   background-color: #ffffff;
@@ -21,12 +18,12 @@
 }
 
 .team__member:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .member__description {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .member__name {

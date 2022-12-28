@@ -1,15 +1,12 @@
+.footer-container{
+  text-align: center;
+}
 .footer {
+  width: 100%;
   background-color: var(--second-bcg-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
 
 .adress {
   font-style: normal;
@@ -24,10 +21,11 @@
 
 .contacts--footer {
   margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .contacts__item--footer:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contacts__link--footer {
@@ -44,11 +42,9 @@
 .contacts__link--footer:focus {
   color: var(--accent-color);
 }
-
-.join {
-  margin-left: 70px;
+.join{
+  margin-bottom: 60px;
 }
-
 .join__text {
   text-transform: uppercase;
   color: #fff;
@@ -68,9 +64,6 @@
   background-color: var(--accent-color);
 }
 
-.subscribe-form {
-  margin-left: 93px;
-}
 
 .subscribe-form__label {
   display: block;
@@ -82,19 +75,17 @@
   margin-bottom: 20px;
 }
 
-.subscribe-form__container {
-  display: flex;
-}
 
 .subscribe-form__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: inherit;
-  width: 358px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
   color: #FFFFFF;
+  margin-bottom: 20px;
 
   &::placeholder {
       color: rgba(255, 255, 255, 0.6);
@@ -105,7 +96,6 @@
 
 
 .subscribe-form__btn {
-  display: flex;
   align-items: center;
   color: #ffffff;
   background-color: var(--accent-color);

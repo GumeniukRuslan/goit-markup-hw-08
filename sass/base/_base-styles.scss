@@ -4,6 +4,9 @@ body {
   font-style: normal;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+  @media screen and (max-width: 767px){
+      padding-top: 60px;
+    }
 }
 
 h1,
@@ -29,5 +32,7 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
