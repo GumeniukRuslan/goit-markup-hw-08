@@ -167,6 +167,14 @@ img {
             flex-direction: column;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
 
 .contacts__icon {
   fill: currentColor;
@@ -177,10 +185,21 @@ img {
   width: 10px;
   height: 14px;
 }
+@media screen and (min-width: 1200px) {
+  .contacts__icon--tel {
+    height: 16px;
+  }
+}
 
 .contacts__icon--mail {
   width: 14px;
   height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon--mail {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .contacts__link--header {
@@ -205,12 +224,23 @@ img {
     font-size: 34px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__link--header {
+    font-size: 14px;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .contacts__item:first-child {
     margin-bottom: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__item:first-child {
+    margin-right: 30px;
+  }
+}
+
 .logo {
   color: var(--accent-color);
   font-family: "Raleway";
@@ -224,6 +254,11 @@ img {
 }
 .logo__part--footer {
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .mobile-menu__open {
@@ -403,8 +438,23 @@ img {
   fill: currentColor;
 }
 
-.footer-container {
-  text-align: center;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .footer {
@@ -414,7 +464,7 @@ img {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-position {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -504,6 +554,7 @@ img {
   border-radius: 4px;
   background-color: inherit;
   width: 100%;
+  max-width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
@@ -512,7 +563,6 @@ img {
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscribe-form__input {
-    width: 450px;
     display: block;
     margin-right: auto;
     margin-left: auto;
