@@ -14,15 +14,20 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px)  {
-  .footer-position{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 60px;
-    align-items: baseline;
-  }
 
+.footer-position{
+  @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 60px;
+      align-items: baseline;
+    }
+
+  @media screen and (min-width: 768px){
+    margin-bottom: 0px;
+  }
 }
+
 .adress {
   font-style: normal;
 }
